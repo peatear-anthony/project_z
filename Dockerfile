@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install nano && \
 # ==================================================================
 # Remove Unwanted Files/ Create the New Directory for the Magenta Files
 # ------------------------------------------------------------------
+	cd ~ && \
 	rm -rf magenta-data && \
-	mkdir magenta-data
+	mkdir magenta-data 
 
+WORKDIR /root/project_z
